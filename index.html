@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfumê - Loja de Perfumes</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .hero-section {
+        background: linear-gradient(
+          135deg,
+          #f5eff3 0%,
+          #8d89f9 50%,
+          #6e74fd 100%
+        );
+        min-height: 60vh;
+      }
+      .product-badge {
+        font-size: 0.7rem;
+        padding: 2px 8px;
+      }
+      .price-old {
+        text-decoration: line-through;
+        color: #6c757d;
+      }
+      .navbar-purple {
+        background: linear-gradient(135deg, #6e74fd 0%, #8d89f9 100%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="bg-dark text-white py-1">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-6">
+            <small
+              ><i class="fas fa-truck me-2"></i>Frete grátis para pedidos acima
+              de R$299</small
+            >
+          </div>
+          <div class="col-6 text-end">
+            <small>
+              <i class="fab fa-facebook me-2"></i>
+              <i class="fab fa-instagram me-2"></i>
+              <i class="fab fa-tiktok"></i>
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-purple navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold fs-3" href="#">PERFUMÊ</a>
+
+        <div class="d-flex align-items-center me-auto ms-4">
+          <div class="input-group" style="width: 300px">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Buscar produtos..."
+            />
+            <button class="btn btn-outline-light" type="button">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="d-flex align-items-center">
+          <div class="me-4">
+            <i class="fas fa-user me-2"></i>
+            <small>Cadastre-se | Fazer login</small>
+          </div>
+          <div class="position-relative">
+            <i class="fas fa-shopping-cart fs-5"></i>
+            <span
+              class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-white text-danger "
+            >
+              2
+            </span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Menu -->
+    <nav class="navbar navbar-expand-lg bg-white border-bottom">
+      <div class="container-fluid">
+        <div class="d-flex justify-content-center w-100">
+          <div class="navbar-nav d-flex flex-row">
+            <a class="nav-link text-dark me-4" href="#">Perfumes</a>
+            <a class="nav-link text-dark me-4" href="#">Hidratantes</a>
+            <a class="nav-link text-dark me-4" href="#">Homespray</a>
+            <a class="nav-link text-dark me-4" href="#">Mais Vendidos</a>
+            <a class="nav-link text-dark me-4" href="#">Kits</a>
+            <a class="nav-link text-dark me-4" href="#">Descontos</a>
+            <a class="nav-link text-dark me-4" href="#">Novidades</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section py-5 d-flex align-items-center">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div class="ps-5">
+              <div class="mb-3">
+                <h3>PERFUMÊ</h3>
+              </div>
+              <h1 class="display-3 fw-bold mb-3">PERFUMES E COSMÉTICOS</h1>
+              <h4 class="mb-3">As fragrâncias mais desejadas do mundo, em um só lugar.</h4>
+              <p class="mb-4">FRETE GRÁTIS PARA PEDIDOS ACIMA DE R$299</p>
+              <button class="btn btn-dark btn-lg px-4">
+                APROVEITE <i class="fas fa-arrow-right ms-2"></i>
+              </button>
+            </div>
+          </div>
+          <div class="col-md-6 text-center">
+            <img
+              src="./imgs/perfumaria-04.jpg"
+              alt="Tênis 1"
+              class="img-fluid me-4 rounded"
+              style="max-width: 200px"
+            />
+            <img
+              src="./imgs/perfumaria-05.jpg"
+              alt="Tênis 2"
+              class="img-fluid rounded"
+              style="max-width: 200px"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Produtos em Destaque -->
+    <section class="py-5">
+      <div class="container-fluid">
+        <h2 class="text-center mb-5 fw-bold">Produtos em destaque</h2>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="position-relative">
+                <span
+                  class="badge bg-primary position-absolute top-0 start-0 m-2 product-badge"
+                  >FRETE GRÁTIS</span
+                >
+                <img
+                  src="./imgs/perfumaria-06.jpg"
+                  class="card-img-top"
+                  alt="Perfume"
+                />
+              </div>
+              <div class="card-body text-center">
+                <h6 class="card-title">
+                  Perfume Dior Sauvage Eau de Toilette 60ml
+                </h6>
+                <div class="mb-2">
+                  <i class="fas fa-circle text-danger me-1"></i>
+                  <i class="fas fa-circle text-primary me-1"></i>
+                  <i class="fas fa-circle text-dark me-1"></i>
+                  <i class="fas fa-circle text-white border me-1"></i>
+                </div>
+                <p class="h5 text-primary mb-0">R$529,00</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="position-relative">
+                <span
+                  class="badge bg-primary position-absolute top-0 start-0 m-2 product-badge"
+                  >FRETE GRÁTIS</span
+                >
+                <img
+                  src="./imgs/perfumaria-04.jpg"
+                  class="card-img-top"
+                  alt="Perfume"
+                />
+              </div>
+              <div class="card-body text-center">
+                <h6 class="card-title">
+                  Perfume 212 VIP Black Carolina Herrera 100ml
+                </h6>
+                <div class="mb-2">
+                  <i class="fas fa-circle text-info me-1"></i>
+                  <i class="fas fa-circle text-secondary me-1"></i>
+                  <i class="fas fa-circle text-success me-1"></i>
+                </div>
+                <p class="h5 text-primary mb-0">R$489,00</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="position-relative">
+                <span
+                  class="badge bg-primary position-absolute top-0 start-0 m-2 product-badge"
+                  >FRETE GRÁTIS</span
+                >
+                <img
+                  src="./imgs/perfumaria-05.jpg"
+                  class="card-img-top"
+                  alt="Perfume"
+                />
+              </div>
+              <div class="card-body text-center">
+                <h6 class="card-title">
+                  Perfume Bleu de Chanel Eau de Parfum 100ml
+                </h6>
+                <div class="mb-2">
+                  <i class="fas fa-circle text-dark me-1"></i>
+                  <i class="fas fa-circle text-secondary me-1"></i>
+                  <i class="fas fa-circle text-white border me-1"></i>
+                </div>
+                <p class="h5 text-primary mb-0">R$599,00</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="position-relative">
+                <span
+                  class="badge bg-danger position-absolute top-0 start-0 m-2 product-badge"
+                  >PROMOÇÃO -50%</span
+                >
+                <img
+                  src="./imgs/perfumaria-03.jpg"
+                  class="card-img-top"
+                  alt="Perfume"
+                />
+              </div>
+              <div class="card-body text-center">
+                <h6 class="card-title">Perfume Malbec Club Natura 100ml</h6>
+                <div class="mb-2">
+                  <i class="fas fa-circle text-dark me-1"></i>
+                  <i class="fas fa-circle text-secondary me-1"></i>
+                  <i class="fas fa-circle text-white border me-1"></i>
+                </div>
+                <p class="mb-0">
+                  <span class="price-old small">R$198,00</span>
+                  <span class="h5 text-primary ms-2">R$99,00</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 bg-light">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-3">
+            <div
+              class="card border-0 h-100"
+              style="
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+              "
+            >
+              <div
+                class="card-body text-white d-flex flex-column justify-content-between p-4"
+              >
+                <div>
+                  <span class="badge bg-dark mb-3 product-badge"
+                    >DESTAQUE ESPECIAL</span
+                  >
+                  <h3 class="mb-3">Perfumes Inesquecíveis</h3>
+                  <p class="mb-3">
+                    <i class="fas fa-arrow-right me-2"></i>20% OFF EM
+                  </p>
+                  <h4>fragrâncias femininas</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="position-relative">
+                <span
+                  class="badge bg-primary position-absolute top-0 start-0 m-2 product-badge"
+                  >FRETE GRÁTIS</span
+                >
+                <img
+                  src="./imgs/perfumaria-01.jpg"
+                  class="card-img-top"
+                  alt="Perfume"
+                />
+              </div>
+              <div class="card-body text-center">
+                <h6 class="card-title">Essência Floral Paris</h6>
+                <div class="mb-2">
+                  <i class="fas fa-circle text-danger me-1"></i>
+                  <i class="fas fa-circle text-warning me-1"></i>
+                  <i class="fas fa-circle text-info me-1"></i>
+                </div>
+                <p class="mb-0">
+                  <span class="price-old small">R$129,00</span>
+                  <span class="h6 text-primary ms-2">R$99,00</span>
+                </p>
+                <button class="btn btn-primary btn-sm mt-2 w-100">
+                  COMPRAR
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="position-relative">
+                <span
+                  class="badge bg-primary position-absolute top-0 start-0 m-2 product-badge"
+                  >FRETE GRÁTIS</span
+                >
+                <img
+                  src="./imgs/perfumaria-04.jpg"
+                  class="card-img-top"
+                  alt="Perfume"
+                />
+              </div>
+              <div class="card-body text-center">
+                <h6 class="card-title">Elegance Oud Intense</h6>
+                <div class="mb-2">
+                  <i class="fas fa-circle text-dark me-1"></i>
+                  <i class="fas fa-circle text-secondary me-1"></i>
+                  <i class="fas fa-circle text-muted me-1"></i>
+                </div>
+                <p class="mb-0">
+                  <span class="price-old small">R$179,00</span>
+                  <span class="h6 text-primary ms-2">R$139,00</span>
+                </p>
+                <button class="btn btn-outline-primary btn-sm mt-2 w-100">
+                  COMPRAR
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="position-relative">
+                <span
+                  class="badge bg-danger position-absolute top-0 start-0 m-2 product-badge"
+                  >FRETE GRÁTIS</span
+                >
+                <img
+                  src="./imgs/perfumaria-06.jpg"
+                  class="card-img-top"
+                  alt="Perfume"
+                />
+              </div>
+              <div class="card-body text-center">
+                <h6 class="card-title">Sensuelle by Night</h6>
+                <div class="mb-2">
+                  <i class="fas fa-circle text-warning me-1"></i>
+                  <i class="fas fa-circle text-danger me-1"></i>
+                  <i class="fas fa-circle text-info me-1"></i>
+                </div>
+                <p class="h6 text-primary mb-0">R$159,99</p>
+                <button class="btn btn-primary btn-sm mt-2 w-100">
+                  COMPRAR
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lançamentos -->
+    <section class="py-5">
+      <div class="container-fluid">
+        <h2 class="text-center mb-5 fw-bold">Lançamentos em Perfumes</h2>
+        <div class="row">
+          <!-- Produtos adaptados para fragrâncias -->
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="position-relative">
+                <span
+                  class="badge bg-primary position-absolute top-0 start-0 m-2 product-badge"
+                  >FRETE GRÁTIS</span
+                >
+                <img
+                  src="./imgs/perfumaria-01.jpg"
+                  class="card-img-top"
+                  alt="Perfume"
+                />
+              </div>
+              <div class="card-body text-center">
+                <h6 class="card-title">
+                  Essência Noite Selvagem - Eau de Parfum
+                </h6>
+                <div class="mb-2">
+                  <i class="fas fa-circle text-danger me-1"></i>
+                  <i class="fas fa-circle text-primary me-1"></i>
+                  <i class="fas fa-circle text-dark me-1"></i>
+                </div>
+                <p class="h5 text-primary mb-0">R$200,00</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="position-relative">
+                <span
+                  class="badge bg-primary position-absolute top-0 start-0 m-2 product-badge"
+                  >FRETE GRÁTIS</span
+                >
+                <img
+                  src="./imgs/perfumaria-02.jpg"
+                  class="card-img-top"
+                  alt="Perfume"
+                />
+              </div>
+              <div class="card-body text-center">
+                <h6 class="card-title">Le Parfum D’Orchidée - Intense</h6>
+                <div class="mb-2">
+                  <i class="fas fa-circle text-info me-1"></i>
+                  <i class="fas fa-circle text-secondary me-1"></i>
+                </div>
+                <p class="h5 text-primary mb-0">R$1.299,00</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="position-relative">
+                <span
+                  class="badge bg-primary position-absolute top-0 start-0 m-2 product-badge"
+                  >FRETE GRÁTIS</span
+                >
+                <img
+                  src="./imgs/perfumaria-03.jpg"
+                  class="card-img-top"
+                  alt="Perfume"
+                />
+              </div>
+              <div class="card-body text-center">
+                <h6 class="card-title">Mystic Wood - Eau de Toilette</h6>
+                <div class="mb-2">
+                  <i class="fas fa-circle text-dark me-1"></i>
+                  <i class="fas fa-circle text-secondary me-1"></i>
+                </div>
+                <p class="h5 text-primary mb-0">R$1.299,00</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="position-relative">
+                <span
+                  class="badge bg-danger position-absolute top-0 start-0 m-2 product-badge"
+                  >PROMOÇÃO -50%</span
+                >
+                <img
+                  src="./imgs/perfumaria-04.jpg"
+                  class="card-img-top"
+                  alt="Perfume"
+                />
+              </div>
+              <div class="card-body text-center">
+                <h6 class="card-title">Aurora Rosé - Edição Limitada</h6>
+                <div class="mb-2">
+                  <i class="fas fa-circle text-dark me-1"></i>
+                  <i class="fas fa-circle text-secondary me-1"></i>
+                </div>
+                <p class="mb-0">
+                  <span class="price-old small">R$299,00</span>
+                  <span class="h5 text-primary ms-2">R$149,00</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-light pt-5 pb-3">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h6 class="fw-bold mb-3">Categorias</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-decoration-none text-muted"
+                  >O Boticário</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-muted">Natura</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-muted">Jequiti</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-muted">Eudora</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-muted">Racco</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-muted"
+                  >Água de Cheiro</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-muted">Hinode</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-muted">Racco</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h6 class="fw-bold mb-3">Ajuda e Suporte</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-decoration-none text-muted"
+                  >SAC Online</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-muted"
+                  >Trocas e Devoluções</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-muted"
+                  >Política de Privacidade</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-muted"
+                  >Guia de Medidas</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-muted"
+                  >Pagamentos e Fretes</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-muted">Contato</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h6 class="fw-bold mb-3">Central de Atendimento</h6>
+            <ul class="list-unstyled">
+              <li class="text-muted">
+                <i class="fab fa-whatsapp me-2"></i>WhatsApp
+              </li>
+              <li class="text-muted">
+                <i class="fas fa-phone me-2"></i>(11) 99999-9999
+              </li>
+              <li class="text-muted">
+                <i class="fas fa-envelope me-2"></i>contato@sneakrs.com.br
+              </li>
+              <li class="text-muted">Cidade / Estado</li>
+              <li class="text-muted">Seg. a Sex. das 9h às 18h</li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h6 class="fw-bold mb-3">Siga-nos</h6>
+            <div class="d-flex">
+              <a href="#" class="btn btn-outline-primary btn-sm me-2">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="#" class="btn btn-outline-primary btn-sm me-2">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="btn btn-outline-primary btn-sm">
+                <i class="fab fa-tiktok"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <hr class="my-4" />
+
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h6 class="fw-bold mb-2">Formas de pagamento</h6>
+            <div class="d-flex">
+              <img
+                src="./imgs/meios-pagamento.png"
+                height="50px"
+                alt="Visa"
+                class="me-2"
+              />
+            </div>
+
+            <h6 class="fw-bold mb-2 mt-3">Meios de envio</h6>
+            <div class="d-flex">
+              <img
+                src="./imgs/meios-envio.png"
+                width="150px"
+                alt="Correios"
+                class="me-2"
+              />
+            </div>
+          </div>
+
+          <div class="col-md-6 text-md-end">
+            <h6 class="fw-bold mb-2">Segurança</h6>
+            <div class="d-flex justify-content-md-end">
+              <img
+                src="./imgs/google-safe-mono.png"
+                width="150px"
+                alt="SSL"
+                class="me-2"
+              />
+            </div>
+          </div>
+        </div>
+
+        <hr class="my-3" />
+
+        <div class="text-center text-muted">
+          <small>
+            Perfumê - Todos Premium para todos os tipos de sneakers<br />
+            CNPJ: 00.000.000/0001-00 | Todos os direitos reservados<br />
+            <span class="d-inline-flex align-items-center">
+              <span>criado por <b> jopimentell</b> </span>
+            </span>
+          </small>
+        </div>
+      </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 1000">
+      <button class="btn btn-success rounded-circle p-3">
+        <i class="fab fa-whatsapp fs-4"></i>
+      </button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
